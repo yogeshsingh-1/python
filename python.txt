@@ -1,0 +1,23 @@
+# Install virtualenv
+	pip install virtualenv
+
+# create a virtualenv inside your project
+	virtualenv venv
+
+# activate virtualenv
+	venv\scripts\activate
+
+# inside virtual environment first check django is install or not ?
+	
+	if django is not install install django
+		
+		pip install django
+
+# then create a new project as folder name
+	django-admin startproject project_name .
+
+# run server 
+	python manage.py runserver
+		
+# see how many package in your venv
+	pip freeze/list
