@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #dadada;
+        }
+
+        .form {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logintext {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .center {
+            width: 28%;
+            height: 50%;
+            background-color: black;
+            border-radius: 15px;
+            place-items: center;
+            padding: 20px 0;
+        }
+
+        .innerform {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .username {
+            color: white;
+            /* gap: 3px; */
+        }
+
+        .password {
+            color: white;
+        }
+
+        .input {
+            width: 40vh;
+            height: 5vh;
+            border-radius: 2px;
+            border: none;
+            outline-color: royalblue;
+            padding: 3px 10px;
+        }
+
+        .button button {
+            width: 100%;
+            height: 28px;
+            border: none;
+            border-radius: 2px;
+            color: black;
+            margin-top: 2px;
+            background-color: white;
+        }
+
+        .signin {
+            color: white;
+            place-items: center;
+        }
+        p span:hover{
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="center">
+            <div class="logintext">
+                <h3>Login</h3>
+            </div>
+            <div class="loginform">
+                <form action="" class="innerform">
+                    <div class="username">
+                        <label for="username">Username</label><br>
+                        <input class="input" type="text" placeholder="Enter a username" name="username">
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label><br>
+                        <input class="input" type="password" placeholder="Enter a password" name="password">
+                    </div>
+                    <div class="button">
+                        <button>Login</button>
+                    </div>
+                    <div class="signin">
+                        <p>Create a new user?<span> Sign in</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

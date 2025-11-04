@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block menu %}
+<nav>
+    <h3>Navbar</h3>
+    {% for name in names %}
+        <p>{{name}}</p>
+    {% endfor %}
+    <p>{{email}}</p>
+</nav>
+{% endblock %}
+{% block content %}
+<nav>
+    <h6>Content for this html page.</h6>
+</nav>
+{% endblock %}
